@@ -51,3 +51,13 @@
         color: $white;
     }
 }
+
+
+.button-outline-white{
+    border: 2px solid $white;
+    color: $white;
+    &:hover{
+        background: $theme-color-dark;
+        color: $white;
+    }
+}

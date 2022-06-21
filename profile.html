@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WeViewers | Watch videos and earn money!</title>
+    <meta name="description" content="Get YouTube Views">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <!--
+      ==============================
+        Load Main Stylesheet File
+      ==============================
+    -->
+    <link rel="stylesheet" href="css/style.css">    
+
+    <!--
+      ==========================
+        Load Modernizr File
+      ==========================
+    -->
+    <script src="js/modernizr.min.js"></script>
+
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header area start -->
+    <header id="headerarea">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="main_menu_desktop">
+    					<nav class="navbar navbar-expand-lg navbar-light ">
+    					  <a class="navbar-brand" href="#">
+    					  	<img src="images/logo.png" alt="" class="logo">
+    					  </a>
+
+    					  <div class="collapse navbar-collapse" id="desktop_menu">
+    					    <ul class="navbar-nav ml-auto">
+    					      <li class="nav-item">
+    					        <a class="nav-link theme-color" href="#">Home</a>
+    					      </li>
+    					      <li class="nav-item">
+    					        <a class="nav-link scrollTo" href="#how-it-works">How it works</a>
+    					      </li>
+    					      <li class="nav-item">
+    					        <a class="nav-link scrollTo" href="#faq">Help</a>
+    					      </li>
+    					      <!-- <li class="nav-item">
+    					        <a class="nav-link" href="#">Login</a>
+    					      </li> -->
+    					      <!-- <li class="nav-item">
+    					        <a class="nav-link sign_up_button ml-3" href="#">Sign up</a>
+    					      </li> -->
+    					      <li class="nav-item">
+    					        <a class="nav-link" href="#">My Account</a>
+    					      </li>
+    					      <li class="nav-item">
+    					        <a class="nav-link theme-color" href="#">
+    					        	<i class="fa fa-money" aria-hidden="true"></i> 10,000৳
+    					        </a>
+    					      </li>
+    					    </ul>
+    					  </div>
+    					</nav>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+    <!-- Header Area End -->
+   
+
+   <section id="dashboard_menu">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+            <div class="dsh_menu">
+              <ul>
+                <li> <a href="">Watch Video</a> </li>
+                <li> <a href="">Earnings</a> </li>
+                <li> <a href="">Withdraw</a> </li>
+                <li> <a href="" class="active">Profile Settings</a> </li>
+              </ul>
+            </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+
+   <section id="page-wapper">
+     <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="profile_settings">
+              <form>
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" class="form-control" id="name" value="Md Sazzad Hossain">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" value="sazzad362@gmail.com" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="password">New Password</label>
+                  <input type="password" class="form-control" id="password" value="">
+                </div>
+                <div class="form-group">
+                  <label for="confirm_pass">Confirm New Password</label>
+                  <input type="password" class="form-control" id="confirm_pass" value="">
+                </div>
+                <button type="submit" class="sd-button button-fill">Update</button>
+              </form>
+            </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- Model Start-->
+   <div class="modal fade" id="withdrawmodal" data-backdrop="static" data-keyboard="false" tabindex="-1">
+       <div class="modal-dialog modal-dialog-centered modal-lg">
+           <div class="modal-content">
+               <div class="modal-header new_nine_modal_head">
+                   <div>
+                       <h5 class="modal-title" id="staticBackdropLabel">Withdrawal Request.</h5>
+                   </div>
+                   <span class="cross" data-dismiss="modal" aria-label="Close">&times;</span>
+               </div>
+               <div class="modal-body newnine_modal_body">
+                  <div id="bank_form" class="hide">
+                    <form action="" class="validation" method="post" accept-charset="utf-8">
+                      <div class="form-group">
+                        <label for="account_name" class="mb-1">Account Name <span class="text-danger">*</span> </label>
+                        <input type="text" name="account_name" value="" id="account_name" class="form-control required property" required="1" />
+                      </div>
+                      <div class="form-group">
+                        <label for="account_number" class="mb-1">Account Number <span class="text-danger">*</span> </label>
+                        <input type="text" name="account_number" value="" id="account_number" class="form-control required property" required="1" />
+                      </div>
+                      <div class="form-group">
+                        <label for="bank_name" class="mb-1">Bank Name <span class="text-danger">*</span> </label>
+                        <input type="text" name="bank_name" value="" id="bank_name" class="form-control required property" required="1" />
+                      </div>
+                      <div class="form-group">
+                        <label for="branch_name" class="mb-1">Branch Name <span class="text-danger">*</span> </label>
+                        <input type="text" name="branch_name" value="" id="branch_name" class="form-control required property" required="1" />
+                      </div>
+                      <div class="form-group">
+                        <label for="routing_number" class="mb-1">Routing Number</label>
+                        <input type="text" name="routing_number" value="" id="routing_number" class="form-control required property" required="1" />
+                      </div>
+                      <div class="modal-footer pr-0">
+                        <button class="sd-button button-fill-dark" type="submit">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- Model End -->
+
+    <!-- Start footer -->
+
+    <section id="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="footer_top">
+    					<img src="images/logo.png" alt="">
+    				</div>
+    				<div class="footer_menu mt-md-4 mt-3 d-flex justify-content-center">
+                <ul>
+                    <li> <a href="#">Terms and Conditions</a> </li>
+                    <li> <a href="#">Cookie Policy</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="copy text-center mt-4">
+            	<p>© 2022 WeViewers. All rights reserved.</p>
+            </div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!-- End Footer -->
+
+    <div class="back-to-top">
+        <a href="javascript:void(0)" id="scrollUp"><i class="fa fa-long-arrow-up"></i></a>
+    </div>
+
+    <!--
+      ==========================
+        Load Plugins File
+      ==========================
+    -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!--
+      ===============================
+        Active Plugins Main File
+      ===============================
+    -->
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

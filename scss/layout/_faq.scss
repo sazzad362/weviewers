@@ -1,0 +1,57 @@
+/*--------
+   FAQ
+---------*/
+#faq{
+    background: #EEF1F6;
+    padding: 80px 0;
+}
+
+.faq{
+    margin-top: 40px;
+    .card{
+        border: 0;
+        margin-bottom: 25px;
+    }
+    .card-header{
+        background-color: #fff;
+            border-bottom: none;
+    }
+    button{
+        color: $heading-color;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: bold;
+        &:not(.collapsed){
+            color: $theme-color;
+            .faq_icon {
+                background: $theme-color;
+                color: $white;
+            }
+        }
+        &:hover{
+            text-decoration: none;
+            color: $theme-color;
+        }
+        &:active{
+            outline: none;
+        }
+        &:focus{
+            outline: none;
+        }
+        .faq_icon {
+            background: #eef1f6;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            color: $heading-color;
+        }
+    }
+    .collapse {
+       &.show{
+            border-top: 1px solid #f7f7f7;
+        }
+    }
+}

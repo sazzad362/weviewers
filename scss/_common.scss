@@ -31,7 +31,10 @@ button:focus {
 a:focus,
 a:hover{
 	text-decoration: none;
-	color:$black;
+}
+
+a{
+	color: $theme-color;
 }
 
 i,
@@ -84,4 +87,7 @@ p {
 }
 .theme-color{
 	color: $theme-color !important;
+}
+#page-wapper{
+	padding: 80px 0;
 }
