@@ -1,0 +1,47 @@
+/*----------------
+    How it works
+------------------*/
+#how-it-works{
+    background: #EEF1F6;
+    padding: 80px 0;
+    .views-single-service {
+        padding: 50px 30px 43px;
+        background: #fff;
+        border-radius: 6px;
+        transition: all linear 0.3s;
+        margin-top: 60px;
+        &:hover{
+            box-shadow: 0px 40px 40px 0px rgb(14 17 51 / 10%);
+        }
+        .icon{
+            display: inline-block;
+            border-radius: 20px;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            line-height: 70px;
+            background: $header_gradiant;
+            box-shadow: 0px 6px 10px 0px rgb(16 73 189 / 30%);
+            position: relative;
+            span{
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                height: 30px;
+                width: 30px;
+                background: $theme-color;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                box-shadow: 0px 3px 6px 0px rgb(14 17 51 / 10%);
+                line-height: 28px;
+                color: #fff;
+            }
+        }
+        .views-title{
+            font-size: 20px;
+            font-weight: 700;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    }
+}

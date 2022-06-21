@@ -1,0 +1,40 @@
+.views-project-area {
+    padding-bottom: 80px;
+    .views-project-box {
+        background-image: url(../images/project-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 70px;
+        padding-top: 75px;
+        padding-bottom: 85px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .title{
+        color: #fff;
+        font-size: 50px;
+        line-height: 60px;
+        padding-bottom: 10px;
+    }
+    p{
+        color: #fff;
+        opacity: 0.8;
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        padding-left: 30px;
+        border-radius: 6px;
+        border: 0;
+    }
+    .mt-30{
+        margin-top: 30px;
+    }
+    .views-project-thumb{
+        position: absolute;
+        right: 70px;
+        bottom: 0;
+    }
+}
