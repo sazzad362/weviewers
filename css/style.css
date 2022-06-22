@@ -673,7 +673,7 @@ p {
     Watch video
 ------------------*/
 #player_area {
-  padding: 80px 0;
+  padding: 34px 0;
 }
 #player_area #player {
   border-radius: 20px;
@@ -693,6 +693,7 @@ p {
   color: #fff;
   border-radius: 5px;
   font-weight: 500;
+  border: 2px solid #ab1b39;
 }
 #player_area .video_area {
   position: relative;

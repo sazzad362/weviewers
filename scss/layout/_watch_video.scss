@@ -2,7 +2,7 @@
     Watch video
 ------------------*/
 #player_area{
-    padding: 80px 0;
+    padding: 34px 0;
     #player{
         border-radius: 20px;
         width: 100%;
@@ -10,10 +10,6 @@
     .player_action{
         padding: 0 15px;
         a{
-            // padding: 0 15px;
-            // font-size: 14px;
-            // line-height: 30px;
-            // margin-right: 15px;
             i{
                 margin-right: 5px;
             }
@@ -25,10 +21,11 @@
             padding: 0 30px;
             font-size: 16px;
             line-height: 40px;
-            background: #ab1b39;
+            background: $theme-color;
             color: #fff;
             border-radius: 5px;
             font-weight: 500;
+            border: 2px solid $theme-color;
         }
     }
 
@@ -70,7 +67,7 @@
         padding: 15px;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
         font-weight: 600;
-        color: #ab1b39;
+        color: $theme-color;
     }
 
     #next_btn,
