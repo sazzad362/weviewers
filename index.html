@@ -32,7 +32,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12">
-    				<div class="main_menu_desktop">
+    				<div class="main_menu_desktop d-none d-md-none d-lg-block">
     					<nav class="navbar navbar-expand-lg navbar-light ">
     					  <a class="navbar-brand" href="#">
     					  	<img src="images/logo.png" alt="" class="logo">
@@ -67,10 +67,56 @@
     					  </div>
     					</nav>
     				</div>
+
+            <div class="main-nav d-flex justify-content-between d-lg-none">
+              <div class="site_logo">
+                <img src="images/logo.png" alt="Mobile Logo">
+              </div>
+              <div class="menu_icon d-flex align-items-center canvas_open">
+                <i class="fa fa-bars" aria-hidden="true" id="menu_opener"></i>
+              </div>
+            </div>
+
     			</div>
     		</div>
     	</div>
     </header>
+    <!-- ====================
+        Menu Original -->
+
+      <div class="off_canvars_overlay"></div>
+
+      <div class="Offcanvas_menu_wrapper">
+
+        <div class="Offcavas_top">
+          <div class="site_logo">
+            <img src="images/logo.png" alt="Desktop Logo">
+          </div>
+          <div class="canvas_close">
+              <a href="#">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </a>
+          </div>
+        </div>
+
+        <div id="menu" class="text-left ">
+            <ul class="offcanvas_main_menu">
+                <li class="menu-item-has-children">
+                    <a href="#">Home</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a class="scrollTo" href="#how-it-works">How it works</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a class="scrollTo" href="#faq">Help</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a class="" href="#">My Account</a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
     <!-- Header Area End -->
     <!-- Hero area start -->
     <section id="hero_area">
@@ -84,12 +130,12 @@
                       <ul>
                           <li>
                           	<a class="sd-button button-fill" href="#">
-	                          	<i class="fa fa-apple" aria-hidden="true"></i> Download for iOS
+	                          	<i class="fa fa-apple" aria-hidden="true"></i> Get iOS app
 	                          </a>
 	                        </li>
                           <li>
                           	<a class="sd-button button-outline" href="#">
-                          		<i class="fa fa-android" aria-hidden="true"></i> Download for Android
+                          		<i class="fa fa-android" aria-hidden="true"></i> Get Android App
                           	</a>
                           </li>
                       </ul>
@@ -219,11 +265,7 @@
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0">
-                    <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                     Where do I usually find FAQs in a page?
-                        <span class="faq_icon">
-                          <i class="fa fa-angle-up"></i>
-                        </span>
+                    <button class="w-100 text-left btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Where do I usually find FAQs in a page?<span class="faq_icon float-right"><i class="fa fa-angle-up"></i></span>
                     </button>
                   </h2>
                 </div>
@@ -236,9 +278,7 @@
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h2 class="mb-0">
-                    <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Can I see WeViewers in action before purchasing it?
-                      <span class="faq_icon">
+                    <button class="w-100 text-left btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I see WeViewers in action before purchasing it?<span class="faq_icon float-right">
                         <i class="fa fa-angle-up"></i>
                       </span>
                     </button>
@@ -253,11 +293,7 @@
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                     How does WeViewers handle my privacy?
-                      <span class="faq_icon">
-                        <i class="fa fa-angle-up"></i>
-                      </span>
+                    <button class="w-100 text-left btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How does WeViewers handle my privacy?<span class="faq_icon float-right"><i class="fa fa-angle-up"></i></span>
                     </button>
                   </h2>
                 </div>

@@ -25,6 +25,12 @@
     cursor: pointer;
 }
 
+@media #{$xs} {
+    .sd-button{
+        padding: 0 20px;
+    }
+}
+
 .button-fill{
     background: $theme-color;
     color: $white;

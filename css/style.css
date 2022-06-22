@@ -93,6 +93,12 @@ h1 {
   font-size: 48px;
 }
 
+@media (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
 h2 {
   font-size: 36px;
 }
@@ -154,6 +160,120 @@ p {
   font-size: 17px;
 }
 
+/*---------------
+	Mobile Menu CSS
+---------------*/
+.site_logo img {
+  max-width: 200px;
+  padding: 15px 0;
+}
+
+.menu_icon {
+  cursor: pointer;
+}
+.menu_icon i {
+  font-size: 32px;
+}
+
+.Offcanvas_menu_wrapper {
+  width: 290px;
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+  top: 0;
+  height: 100vh;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 0;
+  margin-left: -300px;
+  padding: 50px 20px 30px;
+  overflow-y: auto;
+}
+.Offcanvas_menu_wrapper .Offcavas_top {
+  padding: 0 0 40px 0;
+}
+.Offcanvas_menu_wrapper::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5;
+}
+.Offcanvas_menu_wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.Offcanvas_menu_wrapper::-webkit-scrollbar-thumb {
+  background-color: #ab1b39;
+}
+
+.canvas_close {
+  position: absolute;
+  top: 7px;
+  right: 13px;
+}
+.canvas_close a {
+  width: 25px;
+  height: 25px;
+  display: block;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+}
+
+.off_canvars_overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  cursor: crosshair;
+  background: #333;
+  top: 0;
+}
+
+.off_canvars_overlay.active {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.Offcanvas_menu_wrapper.active {
+  margin-left: 0;
+}
+
+.offcanvas_main_menu li.menu-item-has-children.menu-open > span.menu-expand {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.offcanvas_main_menu li ul li.menu-item-has-children.menu-open span.menu-expand {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.offcanvas_main_menu li {
+  position: relative;
+}
+.offcanvas_main_menu li:last-child {
+  margin: 0;
+}
+.offcanvas_main_menu li span.menu-expand {
+  position: absolute;
+  right: 0;
+}
+.offcanvas_main_menu li a {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.offcanvas_main_menu li a:hover {
+  color: #ab1b39;
+}
+.offcanvas_main_menu li ul.sub-menu {
+  padding-left: 20px;
+}
+
 /*===========================
     Button css 
 ===========================*/
@@ -181,6 +301,11 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .sd-button {
+    padding: 0 20px;
+  }
+}
 .button-fill {
   background: #ab1b39;
   color: #fff;
@@ -236,6 +361,12 @@ p {
   margin-top: 10px;
   margin-bottom: 22px;
 }
+@media (max-width: 767px) {
+  #hero_area .views-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
 #hero_area .views-hero-content ul {
   margin: 41px 0 0;
   padding: 0;
@@ -273,6 +404,25 @@ p {
           box-shadow: 0px 30px 70px 0px rgba(68, 1, 15, 0.2);
 }
 
+/*=========================
+    Hero area Responsive
+==========================*/
+@media (max-width: 767px) {
+  #hero_area .views-hero-thumb {
+    margin-top: 60px;
+  }
+  #hero_area .views-hero-thumb:after {
+    height: 300px;
+    width: 300px;
+  }
+  #hero_area .views-hero-thumb .thumb img {
+    max-width: 250px;
+  }
+  #hero_area .views-hero-thumb .thumb-2 {
+    right: 0px;
+    top: 50%;
+  }
+}
 /*----------------
     How it works
 ------------------*/
@@ -345,6 +495,7 @@ p {
   border-bottom: none;
 }
 .faq button {
+  white-space: revert;
   color: #404040;
   padding-left: 0;
   padding-right: 0;
@@ -394,9 +545,15 @@ p {
   max-width: 400px;
   margin: 0 auto;
   display: block;
+  width: 100%;
 }
 #campaign .campaign-right p {
   margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  #campaign .campaign-right {
+    margin-top: 30px;
+  }
 }
 
 .views-project-area {
@@ -415,11 +572,25 @@ p {
   overflow: hidden;
   border-radius: 10px;
 }
+@media (max-width: 767px) {
+  .views-project-area .views-project-box {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+}
 .views-project-area .title {
   color: #fff;
   font-size: 50px;
   line-height: 60px;
   padding-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .views-project-area .title {
+    font-size: 26px;
+    line-height: 36px;
+  }
 }
 .views-project-area p {
   color: #fff;
@@ -439,6 +610,11 @@ p {
   position: absolute;
   right: 70px;
   bottom: 0;
+}
+@media (max-width: 767px) {
+  .views-project-area .views-project-thumb {
+    display: none;
+  }
 }
 
 #footer {

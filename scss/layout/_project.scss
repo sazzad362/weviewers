@@ -13,11 +13,25 @@
         overflow: hidden;
         border-radius: 10px;
     }
+    @media #{$xs} {
+        .views-project-box {
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 30px;
+        }
+    }
     .title{
         color: #fff;
         font-size: 50px;
         line-height: 60px;
         padding-bottom: 10px;
+    }
+    @media #{$xs} {
+        .title{
+            font-size: 26px;
+            line-height: 36px;
+        }
     }
     p{
         color: #fff;
@@ -37,5 +51,10 @@
         position: absolute;
         right: 70px;
         bottom: 0;
+    }
+    @media #{$xs} {
+        .views-project-thumb{
+            display: none;
+        }
     }
 }
