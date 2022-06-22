@@ -310,7 +310,7 @@ p {
 
 @media (max-width: 767px) {
   .sd-button {
-    padding: 0 20px;
+    padding: 0 12px;
   }
 }
 .button-fill {
