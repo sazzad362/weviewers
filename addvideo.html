@@ -133,10 +133,10 @@
             <div class="dsh_menu">
               <ul>
                 <li> <a href="">Watch Video</a> </li>
-                <li> <a href="">Add Video</a> </li>
+                <li> <a href="" class="active">Add Video</a> </li>
                 <li> <a href="">Earnings</a> </li>
                 <li> <a href="">Withdraw</a> </li>
-                <li> <a href="" class="active">Profile Settings</a> </li>
+                <li> <a href="">Profile Settings</a> </li>
               </ul>
             </div>
          </div>
@@ -152,22 +152,34 @@
             <div class="profile_settings">
               <form>
                 <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input type="text" class="form-control" id="name" value="Md Sazzad Hossain">
+                  <label for="title">Video Title</label>
+                  <input type="text" class="form-control" id="title">
                 </div>
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" value="sazzad362@gmail.com" readonly>
+                  <label for="link">Video Link</label>
+                  <input type="text" class="form-control" id="link">
                 </div>
                 <div class="form-group">
-                  <label for="password">New Password</label>
-                  <input type="password" class="form-control" id="password" value="">
+                  <label for="video_length">length</label>
+                  <input type="text" class="form-control" id="video_length" value="">
                 </div>
-                <div class="form-group">
-                  <label for="confirm_pass">Confirm New Password</label>
-                  <input type="password" class="form-control" id="confirm_pass" value="">
+
+                <div class="payment mt-4 d-block">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal" checked>
+                    <label class="form-check-label" for="paypal">
+                      Pay <span class="font-weight-bold">$200</span> by paypal
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment" id="card" value="card">
+                    <label class="form-check-label" for="card">
+                      Pay <span class="font-weight-bold">$200</span> by Card
+                    </label>
+                  </div>
                 </div>
-                <button type="submit" class="sd-button button-fill">Update</button>
+
+                <button type="submit" class="sd-button button-fill mt-4">Continue Payment</button>
               </form>
             </div>
          </div>

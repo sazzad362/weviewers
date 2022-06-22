@@ -141,6 +141,13 @@ p {
   padding: 80px 0;
 }
 
+.page_content {
+  margin-top: 30px;
+}
+.page_content p {
+  margin-bottom: 15px;
+}
+
 /*---------------
 	Menu CSS
 ---------------*/
@@ -474,6 +481,11 @@ p {
   padding-top: 30px;
   padding-bottom: 10px;
 }
+@media (max-width: 767px) {
+  #how-it-works .views-single-service {
+    margin-top: 30px;
+  }
+}
 
 /*--------
    FAQ
@@ -665,6 +677,11 @@ p {
   height: 600px;
 }
 
+@media (max-width: 767px) {
+  .login-wapper {
+    height: auto;
+  }
+}
 #auth-left {
   background-image: url("../images/authbg.jpg");
   background-size: cover;
@@ -679,6 +696,11 @@ p {
   padding: 30px 30px 30px 0px;
 }
 
+@media (max-width: 767px) {
+  .auth-form {
+    padding: 30px 30px 30px 30px;
+  }
+}
 /*-----------------
 	user profile
 ------------------*/
@@ -697,10 +719,10 @@ p {
   padding: 10px 12px;
 }
 #dashboard_menu .dsh_menu ul li a.active {
-  background: #9e23c6;
+  background: #95132e;
 }
 #dashboard_menu .dsh_menu ul li a:hover {
-  background: #9e23c6;
+  background: #95132e;
 }
 
 .earning-blocks .box {
@@ -710,6 +732,15 @@ p {
   margin-bottom: 30px;
   margin-right: 15px;
   text-align: center;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+.earning-blocks .box:hover {
+  -webkit-box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
+          box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
+}
+.earning-blocks .box:last-child {
+  margin-right: 0;
 }
 .earning-blocks .box .title-text {
   font-size: 18px;
@@ -719,6 +750,15 @@ p {
   font-weight: bold;
   margin-top: 10px;
   font-size: 18px;
+}
+@media (max-width: 767px) {
+  .earning-blocks .box {
+    width: 47.8%;
+    float: left;
+  }
+  .earning-blocks .box:nth-child(even) {
+    margin-right: 0;
+  }
 }
 
 .history .history_single {
@@ -743,7 +783,15 @@ p {
   max-width: 180px;
   width: 100%;
   border-radius: 5px;
+}
+.history .history_single .image_thumb {
   margin-right: 15px;
+}
+.history .history_single .campaign_amount {
+  margin-top: 10px;
+}
+.history .history_single .campaign_amount p {
+  font-weight: bold;
 }
 .history .history_single .right_content .paid_in {
   margin-bottom: 10px;
@@ -755,10 +803,30 @@ p {
   margin-bottom: 10px;
 }
 .history .history_single .right_content .vid_title p {
-  font-weight: 500;
+  font-weight: bold;
 }
 .history .history_single .right_content .vid_date p {
   font-weight: bold;
+}
+.history .history_single .right_content .status {
+  margin-top: 10px;
+}
+.history .history_single .right_content .status p {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .history .history_single {
+    display: block;
+  }
+  .history .history_single img {
+    max-width: initial;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .history .history_single .image_thumb {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 .history .page-item .page-link {
   color: #ab1b39;
@@ -769,6 +837,12 @@ p {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .withdraw_btn .sd-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 .new_nine_modal_head {
   background-image: url("../images/trial_modal.png");
   background-repeat: no-repeat;
@@ -809,4 +883,25 @@ p {
 .max-width-403 {
   max-width: 403px;
   width: 100%;
+}
+
+/*===========================
+    Button css 
+===========================*/
+#page-wapper-not-found {
+  padding: 120px 0;
+}
+
+.not_found img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.not_found h2 {
+  margin-top: 30px;
+}
+.not_found .notfound_msg {
+  max-width: 450px;
+  margin: 25px auto;
 }

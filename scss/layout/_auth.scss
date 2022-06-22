@@ -5,6 +5,11 @@
     background: #EEF1F6;
     height: 600px;
 }
+@media #{$xs} {
+    .login-wapper {
+        height: auto;
+    }
+}
 #auth-left{
     background-image:url('../images/authbg.jpg');
     background-size: cover;
@@ -15,4 +20,9 @@
 }
 .auth-form{
     padding: 30px 30px 30px 0px;
+}
+@media #{$xs} {
+    .auth-form{
+        padding: 30px 30px 30px 30px;
+    }
 }

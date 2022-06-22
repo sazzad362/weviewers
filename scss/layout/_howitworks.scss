@@ -44,4 +44,9 @@
             padding-bottom: 10px;
         }
     }
+    @media #{$xs} {
+        .views-single-service{
+           margin-top: 30px;
+        }
+    }
 }

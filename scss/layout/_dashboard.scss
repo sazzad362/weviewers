@@ -14,10 +14,10 @@
 					color: $white;
 					padding: 10px 12px;
 					&.active{
-						background: #9e23c6;
+						background: $theme-color-dark;
 					}
 					&:hover{
-						background: #9e23c6;
+						background: $theme-color-dark;
 					}
 				}
 			}
@@ -33,6 +33,13 @@
 		margin-bottom: 30px;
 		margin-right: 15px;
 		text-align: center;
+		transition: all linear 0.3s;
+		&:hover{
+		    box-shadow: 0px 40px 40px 0px rgb(14 17 51 / 10%);
+		}
+		&:last-child{
+			margin-right: 0;
+		}
 		.title-text{
 			font-size: 18px;
 			color: #4e4d4d;
@@ -42,6 +49,15 @@
 			margin-top: 10px;
 			font-size: 18px;
 		}
+	}
+	@media #{$xs} {
+	    .box{
+	        width: 47.8%;
+	        float:left;
+	        &:nth-child(even){
+	        	margin-right: 0;
+	        }
+	    }
 	}
 }
 
@@ -61,8 +77,16 @@
 			max-width: 180px;
 			width: 100%;
 			border-radius: 5px;
-			margin-right: 15px;
 		}
+	    .image_thumb{
+	        margin-right: 15px;
+	    }
+	    .campaign_amount{
+	    	margin-top: 10px;
+	    	p{
+	    		font-weight: bold;
+	    	}
+	    }
 		.right_content{
 			.paid_in{
 				margin-bottom: 10px;
@@ -73,7 +97,7 @@
 			.vid_title{
 				margin-bottom: 10px;
 				p{
-					font-weight: 500;
+					font-weight: bold;
 				}
 			}
 			.vid_date {
@@ -81,6 +105,26 @@
 					font-weight: bold;
 				}
 			}
+			.status{
+				margin-top: 10px;
+				p{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	@media #{$xs} {
+		.history_single{
+			display: block;
+			img{
+				max-width: initial;
+				width: 100%;
+				border-radius: 5px;
+			}
+		    .image_thumb{
+		        margin-right: 0;
+		        margin-bottom: 15px;
+		    }
 		}
 	}
 	.page-item{
@@ -93,6 +137,14 @@
 					border-color: $theme-color;
 					color: $white;
 				}
+		}
+	}
+}
+@media #{$xs} {
+	.withdraw_btn {
+		.sd-button{
+			width: 100%;
+			margin-bottom: 10px;
 		}
 	}
 }
